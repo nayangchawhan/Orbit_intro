@@ -1,0 +1,118 @@
+.category-section {
+    position: relative;
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.text-glow {
+    color: #fff;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+
+.category-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.category-card {
+    text-align: center;
+    padding: 64px;
+}
+
+.description-text {
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.highlight-text {
+    color: #fff;
+    display: block;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.role-divider {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    margin: 0 auto 40px;
+}
+
+.role-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+.role-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 24px 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    flex: 1;
+    min-width: 200px;
+    transition: all 0.3s ease;
+}
+
+.role-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.role-item.highlight {
+    background: rgba(79, 172, 254, 0.1);
+    border-color: rgba(79, 172, 254, 0.3);
+    box-shadow: inset 0 0 20px rgba(79, 172, 254, 0.05);
+}
+
+.role-item.highlight:hover {
+    background: rgba(79, 172, 254, 0.15);
+    box-shadow: 0 0 30px rgba(79, 172, 254, 0.2);
+}
+
+.role-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.role-desc {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.role-icon {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+}
+
+.conclusion-text {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #fff, #a3a3a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .role-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .role-icon {
+        transform: rotate(90deg);
+    }
+}

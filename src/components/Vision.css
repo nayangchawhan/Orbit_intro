@@ -1,0 +1,106 @@
+.vision-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.vision-ambient-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(0, 242, 254, 0.08) 0%, transparent 60%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.vision-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.vision-box {
+    margin: 64px 0;
+    padding: 56px !important;
+    background: rgba(20, 25, 35, 0.5) !important;
+}
+
+.vision-intro {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.vision-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.vision-list li {
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.vision-list li:hover {
+    transform: scale(1.05);
+    color: var(--accent-secondary);
+}
+
+.vision-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+.vision-list li:hover .vision-bullet {
+    background: var(--accent-secondary);
+    box-shadow: 0 0 20px var(--accent-secondary);
+}
+
+.vision-conclusion {
+    margin-top: 64px;
+}
+
+.evolution-text {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    color: var(--text-secondary);
+    line-height: 1.2;
+}
+
+.evolution-text.text-glow {
+    color: #fff;
+    margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .vision-list li {
+        font-size: 1.25rem;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .vision-box {
+        padding: 32px !important;
+    }
+}

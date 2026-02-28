@@ -1,0 +1,126 @@
+.market-section {
+    position: relative;
+}
+
+.market-container {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 40px;
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.market-bg-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.mb-16 {
+    margin-bottom: 64px;
+}
+
+.market-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+}
+
+.market-text-block {
+    flex: 1;
+}
+
+.market-divider {
+    width: 1px;
+    height: 150px;
+    background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.market-pillars {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pillars-intro {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.pillars-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.pillars-list li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+}
+
+.bullet-glow {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-secondary);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-secondary);
+}
+
+.market-footer {
+    margin-top: 64px;
+    text-align: center;
+    padding-top: 48px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.market-target {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+@media (max-width: 992px) {
+    .market-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .market-divider {
+        width: 150px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    }
+
+    .pillars-list li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .market-container {
+        padding: 40px 24px;
+    }
+}
