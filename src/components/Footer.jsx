@@ -13,7 +13,7 @@ const Footer = () => {
                     </div>
                     <p className="footer-tagline">Redefining Intelligent Infrastructure.</p>
                     <div className="footer-copyright">
-                        &copy; {new Date().getFullYear()} Wave ecosystem. All rights reserved.
+                        &copy; {new Date().getFullYear()} Automattrix. All rights reserved.
                     </div>
                 </div>
             </div>
