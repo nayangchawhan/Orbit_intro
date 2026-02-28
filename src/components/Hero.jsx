@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="container hero-container">
                 <div className="hero-content animate-on-scroll">
                     <div className="hero-badge delay-100 animate-on-scroll">
-                        <span>Introducing Ordit to the WORLD</span>
+                        <span>Introducing Orbit to the WORLD</span>
                     </div>
 
                     <h1 className="hero-title animate-on-scroll delay-200">Orbit</h1>
